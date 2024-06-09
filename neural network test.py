@@ -2,13 +2,48 @@ import numpy
 import numpy as np
 import math
 
-array=[1,2,3,4,5,6,7,8,9,]
-x = numpy.array(array)
-y = x.reshape(3,3)
+#A (when visualized pixels form to become a letter A and so on for the rest of data set.
+a = [0, 0, 1, 1, 0, 0,
+     0, 1, 0, 0, 1, 0,
+     1, 1, 1, 1, 1, 1,
+     1, 0, 0, 0, 0, 1,
+     1, 0, 0, 0, 0, 1]
+# B
+b = [0, 1, 1, 1, 1, 0,
+     0, 1, 0, 0, 1, 0,
+     0, 1, 1, 1, 1, 0,
+     0, 1, 0, 0, 1, 0,
+     0, 1, 1, 1, 1, 0]
+# C
+c = [0, 1, 1, 1, 1, 0,
+     0, 1, 0, 0, 0, 0,
+     0, 1, 0, 0, 0, 0,
+     0, 1, 0, 0, 0, 0,
+     0, 1, 1, 1, 1, 0]
 
-def weights():
-    pass
+# Creating labels
+y = [[1, 0, 0],
+     [0, 1, 0],
+     [0, 0, 1]]
+#y = the prediction part.
 
 def sigmoid(x):
     return 1 / (1 + np.exp(-x))
+#activation function
+def forward_prop():
+    pass
+def weights(x,y):
+    l = []
+    for i in range(x * y):
+        l.append(np.random.randn())
+    return (np.array(l).reshape(x, y))
+def loss():
+    pass
 
+def backward_prop():
+    pass
+#meant to help with initializing weights
+def prediction():
+    pass
+def training():
+    pass
