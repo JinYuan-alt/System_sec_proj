@@ -1,5 +1,4 @@
 import time
-
 from ratelimiter import RateLimiter as RL
 def limited(until):
     duration = int(round(until - time.time()))
@@ -7,7 +6,11 @@ def limited(until):
 
 rate_limiter = RL(max_calls=2, period=3, callback=limited)
 
-for i in range(3):
+def call():
     with rate_limiter:
-        print('Iteration', i)
+     print("testing")
+
+for i in range(3):
+    call()
+
 
