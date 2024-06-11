@@ -25,5 +25,4 @@ def expiry(P_yr,P_day,P_month,yr,day,month):
 
 register()
 
-#make sure code to get localtime() runs once the user opens tab
-#so comparison can take place.
+#make sure code to get localtime() runs once the user regiaters
