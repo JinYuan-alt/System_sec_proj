@@ -1,6 +1,6 @@
 def log(i):
     f = open("logfile.txt", "a")
-    f.write(i)
+    f.write(str(i))
     f.write("\n")
     f.close()
 
