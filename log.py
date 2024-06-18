@@ -11,3 +11,5 @@ def login():
         i+=1
         a = True
     log(i)
+
+login()
