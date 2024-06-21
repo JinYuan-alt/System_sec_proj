@@ -1,15 +1,21 @@
+import re
+
 def log(i):
     f = open("logfile.txt", "a")
     f.write(str(i))
     f.write("\n")
     f.close()
+    count()
 
 def login():
-    i=0
-    a=False
-    while a == False: #while password for user != password entered, i+=1
-        i+=1
-        a = True
+    i="Iam a nonce"
     log(i)
+
+
+def count():
+    f = open("logfile.txt","r")
+    Lines=f.readlines()
+    f.close()
+
 
 login()
