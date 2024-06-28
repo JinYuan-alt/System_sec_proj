@@ -17,8 +17,12 @@ def register():
    #write some sql code to store this into database under user's username
    expiry(P_yr,P_day,P_month,yr,day,month)
 
-def expiry(P_yr,P_day,P_month,yr,day,month):
+def expiry(P_yr,P_day,P_month):
    #this should retrieve the data from sql
+   CT = time.localtime()
+   yr = str(CT.tm_year)
+   day = str(CT.tm_mday)
+   month = str(CT.tm_mon)
    if P_yr == yr and P_month == month:
       if P_day == day:
         print("yes")
