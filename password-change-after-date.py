@@ -15,7 +15,7 @@ def register():
    P_month=str(time_list[1])
    P_day=str(time_list[2])
    #write some sql code to store this into database under user's username
-   expiry(P_yr,P_day,P_month,yr,day,month)
+   expiry(P_yr,P_day,P_month)
 
 def expiry(P_yr,P_day,P_month):
    #this should retrieve the data from sql
