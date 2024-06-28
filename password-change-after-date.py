@@ -22,6 +22,8 @@ def expiry(P_yr,P_day,P_month,yr,day,month):
    if P_yr == yr and P_month == month:
       if P_day == day:
         print("yes")
+      else: pass
+   else: pass
 
 register()
 

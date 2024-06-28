@@ -21,3 +21,4 @@ while (True):
         vid.release()# After the loop release the cap object
         break
 
+#rewrite
