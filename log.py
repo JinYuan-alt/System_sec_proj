@@ -15,6 +15,7 @@ def login():
 def count():
     f = open("logfile.txt","r")
     Lines=f.readlines()
+    print(Lines)
     f.close()
 
 
